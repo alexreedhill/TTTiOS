@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0009A14A19882F5100D17333 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0009A14819882F5100D17333 /* MenuController.swift */; };
 		003DE4B9198826BE00806696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DE4B8198826BE00806696 /* AppDelegate.swift */; };
-		003DE4BB198826BE00806696 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DE4BA198826BE00806696 /* ViewController.swift */; };
+		003DE4BB198826BE00806696 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DE4BA198826BE00806696 /* GameController.swift */; };
 		003DE4BE198826BE00806696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003DE4BC198826BE00806696 /* Main.storyboard */; };
 		003DE4C0198826BE00806696 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003DE4BF198826BE00806696 /* Images.xcassets */; };
 		003DE4CC198826BE00806696 /* TTTiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DE4CB198826BE00806696 /* TTTiOSTests.swift */; };
@@ -25,10 +26,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0009A14819882F5100D17333 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = ../../TTTiOsInterfaceSansSpecs/TTTiOsInterfaceSansSpecs/MenuController.swift; sourceTree = "<group>"; };
 		003DE4B3198826BE00806696 /* TTTiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTTiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		003DE4B7198826BE00806696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		003DE4B8198826BE00806696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		003DE4BA198826BE00806696 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		003DE4BA198826BE00806696 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		003DE4BD198826BE00806696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		003DE4BF198826BE00806696 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		003DE4C5198826BE00806696 /* TTTiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTTiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,8 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				003DE4B8198826BE00806696 /* AppDelegate.swift */,
-				003DE4BA198826BE00806696 /* ViewController.swift */,
+				003DE4BA198826BE00806696 /* GameController.swift */,
 				003DE4BC198826BE00806696 /* Main.storyboard */,
+				0009A14819882F5100D17333 /* MenuController.swift */,
 				003DE4BF198826BE00806696 /* Images.xcassets */,
 				003DE4B6198826BE00806696 /* Supporting Files */,
 			);
@@ -208,7 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003DE4BB198826BE00806696 /* ViewController.swift in Sources */,
+				003DE4BB198826BE00806696 /* GameController.swift in Sources */,
+				0009A14A19882F5100D17333 /* MenuController.swift in Sources */,
 				003DE4B9198826BE00806696 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +399,7 @@
 				003DE4D1198826BE00806696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		003DE4D2198826BE00806696 /* Build configuration list for PBXNativeTarget "TTTiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +408,7 @@
 				003DE4D4198826BE00806696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
