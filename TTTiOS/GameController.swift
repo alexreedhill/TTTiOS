@@ -14,12 +14,13 @@ class GameController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var url = NSURL(string: "http://localhost:9393")
+        var url = NSURL(string: "http://localhost:9393/ios")
         var request = NSURLRequest(URL: url)
         
         if let webView = web1 {
             webView.loadRequest(request)
         } else {
+            
             println("web view not instantiated")
         }
     }
