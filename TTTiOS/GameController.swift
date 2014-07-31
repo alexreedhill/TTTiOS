@@ -14,13 +14,13 @@ class GameController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var url = NSURL(string: "http://localhost:9393/ios")
+        let menu = Menu.sharedInstance
+        var url = NSURL(string: "http:ttt-rb.herokuapp.com/ios?humanValue=\(menu.character)&aiType=\(menu.aiType)&firstPlayer=\(menu.firstPlayer)")
         var request = NSURLRequest(URL: url)
         
         if let webView = web1 {
             webView.loadRequest(request)
         } else {
-            
             println("web view not instantiated")
         }
     }
