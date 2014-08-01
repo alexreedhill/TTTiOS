@@ -31,32 +31,16 @@ class MenuController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let menu = Menu.sharedInstance
-        setCharacterControl(menu)
-        setAiTypeControl(menu)
-        setFirstPlayerControl(menu)
+        setControl(self.characterControl, menuValue: menu.character, defaultValue: "X")
+        setControl(self.aiTypeControl, menuValue: menu.aiType, defaultValue: "minimax")
+        setControl(self.firstPlayerControl, menuValue: menu.firstPlayer, defaultValue: "human")
     }
     
-    func setCharacterControl(menu : Menu) {
-        if(menu.character == "X") {
-            self.characterControl.selectedSegmentIndex = 0
+    func setControl(control : UISegmentedControl, menuValue :String, defaultValue : String) {
+        if(menuValue == defaultValue) {
+            control.selectedSegmentIndex = 0
         } else {
-            self.characterControl.selectedSegmentIndex = 1
-        }
-    }
-    
-    func setAiTypeControl(menu : Menu) {
-        if(menu.aiType == "minimax") {
-            self.aiTypeControl.selectedSegmentIndex = 0
-        } else {
-            self.aiTypeControl.selectedSegmentIndex = 1
-        }
-    }
-    
-    func setFirstPlayerControl(menu : Menu) {
-        if(menu.firstPlayer == "human") {
-            self.firstPlayerControl.selectedSegmentIndex = 0
-        } else {
-            self.firstPlayerControl.selectedSegmentIndex = 1
+            control.selectedSegmentIndex = 1
         }
     }
     
