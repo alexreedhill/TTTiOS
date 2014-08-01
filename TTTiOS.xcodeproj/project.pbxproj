@@ -12,7 +12,6 @@
 		003DE4BB198826BE00806696 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DE4BA198826BE00806696 /* GameController.swift */; };
 		003DE4BE198826BE00806696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003DE4BC198826BE00806696 /* Main.storyboard */; };
 		003DE4C0198826BE00806696 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003DE4BF198826BE00806696 /* Images.xcassets */; };
-		003DE4CC198826BE00806696 /* TTTiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003DE4CB198826BE00806696 /* TTTiOSTests.swift */; };
 		0090335E198AA854002EC125 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090335D198AA854002EC125 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +34,6 @@
 		003DE4BD198826BE00806696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		003DE4BF198826BE00806696 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		003DE4C5198826BE00806696 /* TTTiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTTiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		003DE4CA198826BE00806696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		003DE4CB198826BE00806696 /* TTTiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTiOSTests.swift; sourceTree = "<group>"; };
 		0090335D198AA854002EC125 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				003DE4B5198826BE00806696 /* TTTiOS */,
-				003DE4C8198826BE00806696 /* TTTiOSTests */,
 				003DE4B4198826BE00806696 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,23 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				003DE4B7198826BE00806696 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		003DE4C8198826BE00806696 /* TTTiOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				003DE4CB198826BE00806696 /* TTTiOSTests.swift */,
-				003DE4C9198826BE00806696 /* Supporting Files */,
-			);
-			path = TTTiOSTests;
-			sourceTree = "<group>";
-		};
-		003DE4C9198826BE00806696 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				003DE4CA198826BE00806696 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -225,7 +204,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003DE4CC198826BE00806696 /* TTTiOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

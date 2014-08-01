@@ -13,6 +13,7 @@ class MenuController: UIViewController {
     @IBOutlet strong var aiTypeControl: UISegmentedControl!
     @IBOutlet strong var firstPlayerControl: UISegmentedControl!
     
+    
     @IBAction func playGame(sender: AnyObject) {
         let menu = Menu.sharedInstance
         menu.character = getSegmentedValue(characterControl)
@@ -29,6 +30,34 @@ class MenuController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let menu = Menu.sharedInstance
+        setCharacterControl(menu)
+        setAiTypeControl(menu)
+        setFirstPlayerControl(menu)
+    }
+    
+    func setCharacterControl(menu : Menu) {
+        if(menu.character == "X") {
+            self.characterControl.selectedSegmentIndex = 0
+        } else {
+            self.characterControl.selectedSegmentIndex = 1
+        }
+    }
+    
+    func setAiTypeControl(menu : Menu) {
+        if(menu.aiType == "minimax") {
+            self.aiTypeControl.selectedSegmentIndex = 0
+        } else {
+            self.aiTypeControl.selectedSegmentIndex = 1
+        }
+    }
+    
+    func setFirstPlayerControl(menu : Menu) {
+        if(menu.firstPlayer == "human") {
+            self.firstPlayerControl.selectedSegmentIndex = 0
+        } else {
+            self.firstPlayerControl.selectedSegmentIndex = 1
+        }
     }
     
     override func didReceiveMemoryWarning() {
